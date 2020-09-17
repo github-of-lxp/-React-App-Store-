@@ -2,46 +2,54 @@
 技术栈react+react-router+redux+axios，个人练手小项目
 
 第一步
+-------
 移动端首先要进行rem适配，教程可参考这个链接https://dotnet9.com/14042.html
 
 第二步
+-------
 配置api,在src目录下新建api文件夹，在api中新建index.js文件如下，并export导出
-  
-import axios from 'axios'
-const baseUrl="http://localhost:3000/mock/"
+```javascript
+  import axios from 'axios'
+  const baseUrl="http://localhost:3000/mock/"
 
-export const getRecomendData=()=>{
-    return axios.get(baseUrl+"recomendData.json")
-}
+  export const getRecomendData=()=>{
+      return axios.get(baseUrl+"recomendData.json")
+  }
 
-export const getAppList=()=>{
-    return axios.get(baseUrl+"appListData.json",{})
-}
-
+  export const getAppList=()=>{
+      return axios.get(baseUrl+"appListData.json",{})
+  }
+```
 数据采用本地模拟数据，mock文件夹一定要放在public文件夹里边
 
 第三步
+-------
 构建page，项目分为两个界面，Home和AppPage，因此使用react-router切换两个页面
 新建pages文件夹，然后新建Home和AppPage两个页面，然后将两个页面导入到App.js中，并在项目的index.js中配置
 
 
 第四步
+-------
 配置redux，redux有三个作用，第一是搜索框改变时更新state，第二是点击‘加载更多’更新state，第三个是对Loading提示框的state的改变
 其中，第二个部分采用的异步action加载更多数据和控制loading
 
 redux完整代码如下
 
 store.js
+-------
+```javascript
 import {createStore,applyMiddleware} from 'redux'
 import gameApp from './reducer'
 import thunk from 'redux-thunk'
+
 const store=createStore(gameApp,applyMiddleware(thunk))
 
 export default store
-
-
+```
 
 action.js
+-------
+```javascript
 import { ADD_GAME_LIST,CHANGE_GAME_LIST,SHOW_LOADING,HIDE_LOADING} from './action-type'
 import {getAppList } from '../api/index'
 
@@ -90,11 +98,13 @@ export function hideLoading(){
         loading:false
     }
 }
-
+```
 
 
 
 reducer.js
+-------
+```javascript
 import { combineReducers } from 'redux'
 import { ADD_GAME_LIST,CHANGE_GAME_LIST,SHOW_LOADING,HIDE_LOADING} from './action-type'
 
@@ -131,12 +141,13 @@ const gameApp=combineReducers({
     loading
 })
 export default gameApp
-
+```
 
 最后app.js和index.js如下
 
 app.js
-
+-------
+```javascript
 import React from 'react';
 import './App.css';
 import Home from './pages/Home/Home'
@@ -166,9 +177,10 @@ function App() {
 }
 
 export default App
-
+```
 index.js
-
+-------
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -194,6 +206,6 @@ ReactDOM.render(
 );
 
 serviceWorker.unregister();
-
+```
 最后附上效果图
 
