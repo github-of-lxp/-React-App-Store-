@@ -1,0 +1,141 @@
+.xp-app-wrapper .xp-app-header {
+  position: relative;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dddddd;
+}
+.xp-app-wrapper .xp-app-header img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+.xp-app-wrapper .xp-app-header div {
+  width: 215px;
+}
+.xp-app-wrapper .xp-app-header div span {
+  margin-left: 20px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 215px;
+}
+.xp-app-wrapper .xp-app-header div .pur-btn {
+  background: #334ae2;
+  color: #fff;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 20px;
+}
+.xp-app-wrapper .xp-app-header div .pur-tip {
+  color: #999999;
+  line-height: 30px;
+  font-size: 12px;
+  height: 30px;
+  width: 100px;
+}
+.xp-app-wrapper .xp-app-el-info::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+.xp-app-wrapper .xp-app-el-info {
+  display: inline-flex;
+  width: 100%;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+}
+.xp-app-wrapper .xp-app-el-info .app-info-item {
+  display: flex;
+  flex-direction: column;
+  color: #999999;
+  border-right: 1px solid #dddddd;
+  justify-content: center;
+}
+.xp-app-wrapper .xp-app-el-info .app-info-item div {
+  width: 100px;
+}
+.xp-app-wrapper .xp-app-el-info .app-info-item .app-info-item-top {
+  font-size: 12px;
+}
+.xp-app-wrapper .xp-app-el-info .app-info-item .app-info-item-mid {
+  font-size: 24px;
+  font-weight: 700;
+}
+.xp-app-wrapper .xp-app-el-info .app-info-item .app-info-item-bottom {
+  font-size: 14px;
+}
+.xp-app-wrapper .xp-app-image {
+  border-bottom: 1px solid #dddddd;
+}
+.xp-app-wrapper .xp-app-image img {
+  height: 175px;
+  border-radius: 10px;
+}
+.xp-app-wrapper .xp-app-image .xp-app-image-tip {
+  font-size: 14px;
+  color: #999999;
+  text-align: left;
+  padding: 15px 0 20px 20px;
+}
+.xp-app-wrapper .xp-app-detail {
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.xp-app-wrapper .xp-app-detail .xp-app-more-detail {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+  height: 20px;
+  line-height: 20px;
+  background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0.8));
+  color: #334ae2;
+  text-align: center;
+}
+.xp-app-wrapper .xp-app-detail p {
+  margin-bottom: 20px;
+}
+.xp-app-wrapper .xp-app-detail p:last-child {
+  margin-bottom: 0;
+}
+.xp-app-wrapper .xp-app-other-info {
+  margin: 20px;
+  border-top: 1px solid #dddddd;
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  padding-bottom: 20px;
+}
+.xp-app-wrapper .xp-app-other-info h2 {
+  text-align: left;
+  font-size: 24px;
+}
+.xp-app-wrapper .xp-app-other-info .xp-app-other-info-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.xp-app-wrapper .xp-app-other-info .xp-app-other-info-list span {
+  font-size: 16px;
+}
+.xp-app-wrapper .xp-app-other-info .xp-app-other-info-list .xp-app-other-info-list-label {
+  color: #999999;
+}
+.xp-app-wrapper .xp-app-other-info .xp-app-other-info-list .xp-app-other-info-list-content {
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}
