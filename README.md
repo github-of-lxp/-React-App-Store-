@@ -208,4 +208,4 @@ ReactDOM.render(
 serviceWorker.unregister();
 ```
 最后附上效果图
-
+![image](https://raw.githubusercontent.com/lxp-Guthub/-React-App-Store-/master/Jietu20200917-105342-HD.gif ) 
