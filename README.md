@@ -207,5 +207,6 @@ ReactDOM.render(
 
 serviceWorker.unregister();
 ```
-最后附上效果图
-![image](https://raw.githubusercontent.com/lxp-Guthub/-React-App-Store-/master/Jietu20200917-105342-HD.gif ) 
+最后附上效果图  
+
+![image](https://github.com/lxp-Guthub/-React-App-Store-/blob/master/run.gif?raw=true ) 
