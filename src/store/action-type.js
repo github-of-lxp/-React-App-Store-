@@ -1,0 +1,5 @@
+
+export const ADD_GAME_LIST="ADD_GAME_LIST"
+export const CHANGE_GAME_LIST="CHANGE_GAME_LIST"
+export const SHOW_LOADING="SHOW_LOADING"
+export const HIDE_LOADING="HIDE_LOADING"
