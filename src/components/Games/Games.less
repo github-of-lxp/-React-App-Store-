@@ -1,0 +1,48 @@
+.game-wrapper{
+    .load-more{
+        padding: 20px;
+        font-size: 20px;
+        color:darkblue;
+    }
+    ul{
+        padding: 0 0 0 20px;
+        margin: 0;
+        li{
+            list-style: none;
+            border-bottom: 1px solid #dddddd;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 20px 0;
+            .game-index{
+                color:#999999;
+                width: 30px;
+            }
+            .game-icon{
+                margin-left: 25px;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 60px;
+                height: 60px;
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .game-simply-info{
+                margin-left: 20px;
+                text-align: left;
+                width: 200px;
+                div{
+                    font-size: 20px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                div:last-child{
+                    color:#999999;
+                }
+            }
+        }
+    }
+}

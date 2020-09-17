@@ -1,0 +1,46 @@
+.game-wrapper .load-more {
+  padding: 20px;
+  font-size: 20px;
+  color: darkblue;
+}
+.game-wrapper ul {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.game-wrapper ul li {
+  list-style: none;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+}
+.game-wrapper ul li .game-index {
+  color: #999999;
+  width: 30px;
+}
+.game-wrapper ul li .game-icon {
+  margin-left: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+}
+.game-wrapper ul li .game-icon img {
+  width: 60px;
+  height: 60px;
+}
+.game-wrapper ul li .game-simply-info {
+  margin-left: 20px;
+  text-align: left;
+  width: 200px;
+}
+.game-wrapper ul li .game-simply-info div {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.game-wrapper ul li .game-simply-info div:last-child {
+  color: #999999;
+}
